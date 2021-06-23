@@ -1,0 +1,9 @@
+﻿@model Vidly.Models.Customer
+
+<h1 style="margin-top: 20px">@Model.Name</h1>
+<h4 style="margin-top : 10px">Membership type: @Model.MembershipType.Name</h4>
+
+@if(Model.Birthdate.HasValue)
+{
+    <h4>Birthdate: @Model.Birthdate.Value.ToString("yyyy-MM-dd")</h4>
+}

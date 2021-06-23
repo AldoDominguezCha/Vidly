@@ -1,0 +1,37 @@
+﻿@model Vidly.ViewModels.RandomMovieViewModel
+
+@using Vidly.Models
+@using Vidly.ViewModels
+
+@{
+    ViewBag.Title = "Random movie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*
+    Deciding if the h1 with the movie title should have the "popular" class on it, according to the number
+    of customer that have rented it.
+*@
+
+@{ 
+    var className = (Model.Customers.Count > 2) ? "popular" : null;
+}
+
+<h1 class="@className">@Model.Movie.Name</h1>
+
+@if(Model.Customers.Count == 0)
+{
+    <p>No one has rented the movie.</p>
+}
+else
+{
+    <ul>
+        @foreach (var customer in Model.Customers)
+        {
+            <li>@customer.Name</li>
+        }
+    </ul>
+}
+
+
+
