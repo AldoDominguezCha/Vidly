@@ -38,5 +38,19 @@ namespace Vidly.Controllers
 
             return View(specificMovie);
         }
+
+        [Route("movies/new")]
+        public ActionResult New()
+        {
+            var genres = _context.MovieGenres.ToList();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Genres = genres
+            };
+
+            return View("MovieForm", viewModel);
+
+        }
     }
 }
