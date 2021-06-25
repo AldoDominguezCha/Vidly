@@ -118,3 +118,11 @@ C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Mi
 C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.AddCustomerBirthdate.resources
 C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.MovieAdditionalProperties.resources
 C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.PopulateMovieGenres.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.NullableDatesInMovies.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.Fixing.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.Fixing2.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.DropFKMovies.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.Fix2.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.Fix3.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.AddingConstraints.resources
+C:\Users\Aldo Dominguez\Documents\ASP .NET MVC 5 Course\Vidly\obj\Debug\Vidly.Migrations.CustomValidationsCustomer.resources

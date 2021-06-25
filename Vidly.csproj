@@ -219,12 +219,45 @@
     <Compile Include="Migrations\202106231457258_PopulateMovieGenres.Designer.cs">
       <DependentUpon>202106231457258_PopulateMovieGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202106250047212_NullableDatesInMovies.cs" />
+    <Compile Include="Migrations\202106250047212_NullableDatesInMovies.Designer.cs">
+      <DependentUpon>202106250047212_NullableDatesInMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250106584_Fixing.cs" />
+    <Compile Include="Migrations\202106250106584_Fixing.Designer.cs">
+      <DependentUpon>202106250106584_Fixing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250110071_Fixing2.cs" />
+    <Compile Include="Migrations\202106250110071_Fixing2.Designer.cs">
+      <DependentUpon>202106250110071_Fixing2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250120505_DropFKMovies.cs" />
+    <Compile Include="Migrations\202106250120505_DropFKMovies.Designer.cs">
+      <DependentUpon>202106250120505_DropFKMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250132507_Fix2.cs" />
+    <Compile Include="Migrations\202106250132507_Fix2.Designer.cs">
+      <DependentUpon>202106250132507_Fix2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250133296_Fix3.cs" />
+    <Compile Include="Migrations\202106250133296_Fix3.Designer.cs">
+      <DependentUpon>202106250133296_Fix3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250235049_AddingConstraints.cs" />
+    <Compile Include="Migrations\202106250235049_AddingConstraints.Designer.cs">
+      <DependentUpon>202106250235049_AddingConstraints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106250319196_CustomValidationsCustomer.cs" />
+    <Compile Include="Migrations\202106250319196_CustomValidationsCustomer.Designer.cs">
+      <DependentUpon>202106250319196_CustomValidationsCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieGenre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -350,6 +383,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106231457258_PopulateMovieGenres.resx">
       <DependentUpon>202106231457258_PopulateMovieGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250047212_NullableDatesInMovies.resx">
+      <DependentUpon>202106250047212_NullableDatesInMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250106584_Fixing.resx">
+      <DependentUpon>202106250106584_Fixing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250110071_Fixing2.resx">
+      <DependentUpon>202106250110071_Fixing2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250120505_DropFKMovies.resx">
+      <DependentUpon>202106250120505_DropFKMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250132507_Fix2.resx">
+      <DependentUpon>202106250132507_Fix2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250133296_Fix3.resx">
+      <DependentUpon>202106250133296_Fix3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250235049_AddingConstraints.resx">
+      <DependentUpon>202106250235049_AddingConstraints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106250319196_CustomValidationsCustomer.resx">
+      <DependentUpon>202106250319196_CustomValidationsCustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
