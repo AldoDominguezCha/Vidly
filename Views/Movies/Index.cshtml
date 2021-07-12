@@ -6,24 +6,69 @@
 
 @Html.ActionLink("New Movie", "New", "Movies", null, new { @class = "btn btn-primary", style = "margin-top : 15px" })
 
-@if (Model.Count() == 0)
+
+
+<table class="table table-bordered table-hover" style="margin-top : 30px" id="movies">
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+@section scripts
 {
-    <h3>The are no movies available to show</h3>
-}
-else
-{
-    <table class="table table-bordered table-hover" style="margin-top : 30px">
-        <tr>
-            <th>ID</th>
-            <th>Title</th>
-        </tr>
-        @foreach(var movie in Model)
+    <script>
+        $(document).ready(function ()
         {
-            <tr>
-                <th>@movie.Id</th>
-                <th>@Html.ActionLink(movie.Name, "Edit", "Movies", new { id = movie.Id }, null)</th>
-            </tr>
-        }
-    </table>
+            let moviesTable = $("#movies").DataTable({
+                ajax: {
+                    url: "/api/movies",
+                    dataSrc : ""
+                },
+                columns: [
+                    {
+                        data: "name",
+                        render: function (data, type, row)
+                        {
+                            return "<a href='movies/edit/" + row.id + "'>" + row.name + "</a>"
+                        }
+                    },
+                    {
+                        data : "movieGenre.genreName"
+                    },
+                    {
+                        data: "id",
+                        render: function (data, type, row)
+                        {
+                            return "<button class='btn-link js-delete' data-movie-id=" + data + " data-movie-title=" + row.name + ">Delete</button>";
+                        }
+                    }
+                ]
+            })
+
+            $("#movies").on("click", "button.js-delete", function () {
+                let title = $(this).attr("data-movie-title");
+                let currentButton = $(this);
+                bootbox.confirm("Are you sure you want to remove this movie?", function (result) {
+                    if (result)
+                    {
+                        $.ajax({
+                            url: "/api/movies/" + currentButton.attr("data-movie-id"),
+                            method: "DELETE",
+                            success: function ()
+                            {
+                                moviesTable.row(currentButton.parents("tr")).remove().draw();
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 }
+
 
