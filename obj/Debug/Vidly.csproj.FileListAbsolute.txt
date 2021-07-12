@@ -263,3 +263,4 @@ C:\Users\6112638\OneDrive - Thomson Reuters Incorporated\Documents\ASP .NET Cour
 C:\Users\6112638\OneDrive - Thomson Reuters Incorporated\Documents\ASP .NET Course\Vidly\bin\AutoMapper.dll
 C:\Users\6112638\OneDrive - Thomson Reuters Incorporated\Documents\ASP .NET Course\Vidly\bin\AutoMapper.xml
 C:\Users\6112638\OneDrive - Thomson Reuters Incorporated\Documents\ASP .NET Course\Vidly\obj\Debug\Vidly.Migrations.SeedUsers.resources
+C:\Users\6112638\OneDrive - Thomson Reuters Incorporated\Documents\ASP .NET Course\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
